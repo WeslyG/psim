@@ -1,0 +1,3 @@
+# elasticsearch
+#aiohttp[speedups]
+flake8
