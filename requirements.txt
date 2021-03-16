@@ -1,3 +1,4 @@
 # elasticsearch
 #aiohttp[speedups]
+locust
 flake8
