@@ -1,4 +1,4 @@
 # elasticsearch
-#aiohttp[speedups]
+aiohttp[speedups]
 locust
 flake8

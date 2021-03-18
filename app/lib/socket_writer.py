@@ -13,8 +13,8 @@ async def hello(request):
 @routes.post('/write')
 async def write(request):
     data = await request.json()
-    if (data['system_type'] and data['message']):
-        socket_writer(system_type=data['system_type'], msg=data['message'])
+    if ('system_type' in data and 'message' in data):
+        socket_writer(system_type=str(data['system_type']), msg=str(data['message']))
         return web.json_response({"message": "ok"})
     else:
         return web.json_response({"message": "data not valid"}, status=400)
