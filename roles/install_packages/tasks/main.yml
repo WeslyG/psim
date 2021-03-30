@@ -1,0 +1,31 @@
+---
+- name: Update all packages to their latest version
+  apt:
+    name: "*"
+    state: latest
+  tags:
+    - update
+
+- name: install updates
+  apt:
+    pkg:
+      "{{ package_list }}"
+    update_cache: yes
+
+- name: Remove dependencies that are no longer required
+  apt:
+    autoremove: yes
+  tags:
+    - update
+
+# - name: Install pip packages
+#   pip:
+#     name: "{{ pip_package_list }}"
+#     executable: pip3
+
+
+- name: Add my love alias
+  blockinfile:
+    path: /root/.bashrc
+    block: "{{ alias_block }}"
+    marker: "# ALIAS ANSIBLE MANAGED BLOCK"

@@ -21,3 +21,15 @@ run:
 test:
 	. .venv/bin/activate; \
 	pytest -vv
+
+ansible-deps:
+	. .venv/bin/activate; \
+	ansible-galaxy install -r requirements.yml
+
+ansible:
+	. .venv/bin/activate; \
+	ansible-playbook -i inventory.ini playbook.yml
+
+update:
+	. .venv/bin/activate; \
+	ansible-playbook -i inventory.ini --tags=update playbook.yml

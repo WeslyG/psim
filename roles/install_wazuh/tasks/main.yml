@@ -1,0 +1,17 @@
+---
+- name: Make sure /opt/dc folder exist
+  file:
+    path: /opt/dc
+    state: directory
+    mode: '0755'
+
+- name: Copy docker-compose in folder
+  ansible.builtin.copy:
+    src: ../../../wazuh-docker/docker-compose.yml
+    dest: /opt/dc/docker-compose.yml
+    mode: '0755'
+
+- name: Docker-compose up -d
+  ansible.builtin.shell: 'docker-compose up -d'
+  args:
+    chdir: /opt/dc/

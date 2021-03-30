@@ -1,0 +1,8 @@
+---
+- hosts: all
+  roles:
+    - install_packages
+    - geerlingguy.docker
+    - install_wazuh
+    # - sbaerlocher.telegraf
+    # - install_app
