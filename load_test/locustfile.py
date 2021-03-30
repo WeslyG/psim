@@ -96,12 +96,12 @@ def long_message_builder_error():
 class QuickstartUser(HttpUser):
     # wait_time = between(1, 2.5)
 
-    @task(3)
-    def broken_message(self):
-        self.client.post('/write', json={
-            "message": "test",
-            "qwe": 12
-        })
+    # @task(3)
+    # def broken_message(self):
+    #     self.client.post('/write', json={
+    #         "message": "test",
+    #         "qwe": 12
+    #     })
 
     # @task(3)
     # def hello(self):
