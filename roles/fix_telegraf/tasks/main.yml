@@ -1,0 +1,14 @@
+---
+- name: folder telegraf config must be owned by telegraf
+  ansible.builtin.file:
+    path: /etc/telegraf
+    owner: telegraf
+    group: root
+    mode: '0755'
+    recurse: true
+
+- name: Telegraf must be started
+  ansible.builtin.service:
+    name: telegraf
+    state: started
+    enabled: true

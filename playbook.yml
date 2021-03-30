@@ -1,8 +1,11 @@
 ---
 - hosts: all
+  vars_files:
+    - secret.yml
   roles:
     - install_packages
     - geerlingguy.docker
     - install_wazuh
-    # - sbaerlocher.telegraf
+    - sbaerlocher.telegraf
+    - fix_telegraf
     # - install_app

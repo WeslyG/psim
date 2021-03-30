@@ -5,13 +5,25 @@
     state: directory
     mode: '0755'
 
+- name: Copy config folder
+  ansible.builtin.copy:
+    src: ../../../config
+    dest: /opt/dc/
+    mode: '0755'
+
+- name: Copy app folder
+  ansible.builtin.copy:
+    src: ../../../app
+    dest: /opt/dc/
+    mode: '0755'
+
 - name: Copy docker-compose in folder
   ansible.builtin.copy:
-    src: ../../../wazuh-docker/docker-compose.yml
-    dest: /opt/dc/docker-compose.yml
+    src: ../../../wazuh-docker
+    dest: /opt/dc/
     mode: '0755'
 
 - name: Docker-compose up -d
   ansible.builtin.shell: 'docker-compose up -d'
   args:
-    chdir: /opt/dc/
+    chdir: /opt/dc/wazuh-docker

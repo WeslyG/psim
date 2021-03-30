@@ -18,14 +18,21 @@
   tags:
     - update
 
-# - name: Install pip packages
-#   pip:
-#     name: "{{ pip_package_list }}"
-#     executable: pip3
+- ansible.posix.sysctl:
+    name: vm.max_map_count
+    value: '262144'
+    state: present
+
+- name: Ports opened
+  ansible.posix.firewalld:
+    port: "{{ item }}"
+    permanent: yes
+    state: enabled
+  with_items: "{{ port_opened }}"
 
 
 - name: Add my love alias
   blockinfile:
     path: /root/.bashrc
     block: "{{ alias_block }}"
-    marker: "# ALIAS ANSIBLE MANAGED BLOCK"
+    marker: "# {mark} ALIAS ANSIBLE MANAGED BLOCK"

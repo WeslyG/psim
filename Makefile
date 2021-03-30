@@ -28,8 +28,8 @@ ansible-deps:
 
 ansible:
 	. .venv/bin/activate; \
-	ansible-playbook -i inventory.ini playbook.yml
+	ansible-playbook -i inventory.ini --diff playbook.yml --ask-vault-pass
 
 update:
 	. .venv/bin/activate; \
-	ansible-playbook -i inventory.ini --tags=update playbook.yml
+	ansible-playbook -i inventory.ini --diff --tags=update playbook.yml --ask-vault-pass
