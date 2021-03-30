@@ -30,7 +30,7 @@ services:
       - filebeat_etc:/etc/filebeat
       - filebeat_var:/var/lib/filebeat
       - ../app/:/opt/app/
-      - ../config/ossec.conf:/var/ossec/etc/ossec.conf
+      # - ../config/ossec.conf:/var/ossec/etc/ossec.conf
 
   elasticsearch:
     image: amazon/opendistro-for-elasticsearch:1.11.0

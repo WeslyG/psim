@@ -4,8 +4,13 @@
     path: /etc/telegraf
     owner: telegraf
     group: root
-    mode: '0755'
+    mode: "0755"
     recurse: true
+
+- name: Telegraf user must be added to docker group
+  ansible.builtin.user:
+    name: telegraf
+    group: docker
 
 - name: Telegraf must be started
   ansible.builtin.service:
