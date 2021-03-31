@@ -1,4 +1,3 @@
-# Wazuh Docker Copyright (C) 2021 Wazuh Inc. (License GPLv2)
 FROM centos:7
 
 ARG FILEBEAT_VERSION=7.9.1
@@ -12,7 +11,7 @@ RUN rpm --import https://packages.wazuh.com/key/GPG-KEY-WAZUH
 COPY config/wazuh.repo /etc/yum.repos.d/wazuh.repo
 
 RUN yum --enablerepo=updates clean metadata && \
-  yum -y install openssl which expect openssh-clients && yum -y install wazuh-manager-${WAZUH_VERSION} -y && \
+  yum -y install openssl which expect openssh-clients gcc python3-devel python3-pip python3 && yum -y install wazuh-manager-${WAZUH_VERSION} -y && \
   sed -i "s/^enabled=1/enabled=0/" /etc/yum.repos.d/wazuh.repo && \
   yum clean all && rm -rf /var/cache/yum
 
@@ -45,7 +44,12 @@ RUN chmod 755 /permanent_data.sh && \
     sync && /permanent_data.sh && \
     sync && rm /permanent_data.sh
 
+RUN pip3 install wheel
+RUN pip3 install aiohttp[speedups]
+
+COPY lib/socket_writer.py /opt/
+
 # Services ports
-EXPOSE 55000/tcp 1514/tcp 1515/tcp 514/udp 1516/tcp
+EXPOSE 55000/tcp 1514/tcp 1515/tcp 514/udp 1516/tcp 9000/tcp
 
 ENTRYPOINT [ "/init" ]
