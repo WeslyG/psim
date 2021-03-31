@@ -29,6 +29,7 @@ port_opened:
   - 9500/tcp
   - 9000/tcp
   - 5601/tcp
+  - 8089/tcp
 
 telegraf_inputs: "{{ telegraf_weslyg_input }}"
 

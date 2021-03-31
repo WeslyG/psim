@@ -18,10 +18,39 @@
   tags:
     - update
 
-- ansible.posix.sysctl:
+- name: Max map count for elasticsearch
+  ansible.posix.sysctl:
     name: vm.max_map_count
     value: '262144'
     state: present
+
+- name: Modify soft nofile limmit
+  community.general.pam_limits:
+    domain: 'root'
+    limit_type: soft
+    limit_item: nofile
+    value: 65000
+
+- name: Modify hard nofile limmit
+  community.general.pam_limits:
+    domain: 'root'
+    limit_type: hard
+    limit_item: nofile
+    value: 1048576
+
+- name: Modify soft limit nproc
+  community.general.pam_limits:
+    domain: 'root'
+    limit_type: soft
+    limit_item: nproc
+    value: 65000
+
+- name: Modify hard limit nproc
+  community.general.pam_limits:
+    domain: 'root'
+    limit_type: hard
+    limit_item: nproc
+    value: 1048576
 
 - name: Ports opened
   ansible.posix.firewalld:
@@ -30,6 +59,21 @@
     state: enabled
   with_items: "{{ port_opened }}"
 
+- name: reload service firewalld
+  systemd:
+    name: firewalld
+    state: reloaded
+
+- name: Install locust
+  pip:
+    name: locust
+    executable: pip3
+
+- name: Install loadtest
+  ansible.builtin.copy:
+    src: ../../load_test/
+    dest: /opt/dc/load_test/
+    mode: '0755'
 
 - name: Add my love alias
   blockinfile:

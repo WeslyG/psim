@@ -1,0 +1,4 @@
+---
+- hosts: locust
+  roles:
+    - install_packages

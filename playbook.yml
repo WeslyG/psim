@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: wazuh
   vars_files:
     - secret.yml
   roles:

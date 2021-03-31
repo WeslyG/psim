@@ -33,3 +33,7 @@ ansible:
 update:
 	. .venv/bin/activate; \
 	ansible-playbook -i inventory.ini --diff --tags=update playbook.yml --ask-vault-pass
+
+locust:
+	. .venv/bin/activate; \
+	ansible-playbook -i inventory.ini --diff locust.yml
