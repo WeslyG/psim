@@ -1,0 +1,249 @@
+[
+	{
+		"name" : "?????????",
+		"guid" : "Analytics_Core_m5cBWduf",
+		"class" : "Script",
+		"parent" : "vGiXoZLP"
+	},
+	{
+		"name" : "Cam 13",
+		"guid" : "BUeRCHVD",
+		"class" : "Channel",
+		"parent" : "vGiXoZLPC"
+	},
+	{
+		"name" : "OMNY miniDome1.3M-12V",
+		"guid" : "BjBEYZ26",
+		"class" : "IP Device",
+		"parent" : "vGiXoZLPI"
+	},
+	{
+		"name" : "Cam 11",
+		"guid" : "C0EEC9X0",
+		"class" : "Channel",
+		"parent" : "vGiXoZLPC"
+	},
+	{
+		"name" : "HIKVISION_DS-2CD3756G2T-IZS",
+		"guid" : "C7d4T0vk",
+		"class" : "IP Device",
+		"parent" : "vGiXoZLPI"
+	},
+	{
+		"name" : "OMNY miniDome1.3M-12V 3",
+		"guid" : "E80nCA50",
+		"class" : "IP Device",
+		"parent" : "vGiXoZLPI"
+	},
+	{
+		"name" : "TR-D8251WDIR3",
+		"guid" : "G80OmrZe",
+		"class" : "IP Device",
+		"parent" : "vGiXoZLPI"
+	},
+	{
+		"name" : "????",
+		"guid" : "G9p907j0",
+		"class" : "Template",
+		"parent" : "vGiXoZLPT"
+	},
+	{
+		"name" : "Cam 6",
+		"guid" : "HSpqgNhE",
+		"class" : "Channel",
+		"parent" : "vGiXoZLPC"
+	},
+	{
+		"name" : "TR-D8251WDIR3 3",
+		"guid" : "JaLKyRrh",
+		"class" : "IP Device",
+		"parent" : "vGiXoZLPI"
+	},
+	{
+		"name" : "Cam 7",
+		"guid" : "Lq5bK6po",
+		"class" : "Channel",
+		"parent" : "vGiXoZLPC"
+	},
+	{
+		"name" : "Cam 3",
+		"guid" : "Mts31FXP",
+		"class" : "Channel",
+		"parent" : "vGiXoZLPC"
+	},
+	{
+		"name" : "????",
+		"guid" : "QpK5ue80",
+		"class" : "Template",
+		"parent" : "vGiXoZLPT"
+	},
+	{
+		"name" : "Cam 10",
+		"guid" : "Ry1dKKX2",
+		"class" : "Channel",
+		"parent" : "vGiXoZLPC"
+	},
+	{
+		"name" : "OMNY miniDome1.3M-12V 6",
+		"guid" : "VL8J8TVG",
+		"class" : "IP Device",
+		"parent" : "vGiXoZLPI"
+	},
+	{
+		"name" : "TR-D8251WDIR3 2",
+		"guid" : "X9zbtiak",
+		"class" : "IP Device",
+		"parent" : "vGiXoZLPI"
+	},
+	{
+		"name" : "OMNY miniDome1.3M-12V 5",
+		"guid" : "Xkx9rQQo",
+		"class" : "IP Device",
+		"parent" : "vGiXoZLPI"
+	},
+	{
+		"name" : "???????",
+		"guid" : "XuK4LThF",
+		"class" : "Channel",
+		"parent" : "vGiXoZLPC"
+	},
+	{
+		"name" : "Cam 4",
+		"guid" : "YO7QHtei",
+		"class" : "Channel",
+		"parent" : "vGiXoZLPC"
+	},
+	{
+		"name" : "Analytics (Business Analytics)",
+		"guid" : "analysis_AGLsGOC4",
+		"class" : "Script",
+		"parent" : "vGiXoZLP"
+	},
+	{
+		"name" : "OMNY miniDome1.3M-12V 2",
+		"guid" : "eBUH72dy",
+		"class" : "IP Device",
+		"parent" : "vGiXoZLPI"
+	},
+	{
+		"name" : "OMNY miniDome1.3M-12V 7",
+		"guid" : "hQDrZPzK",
+		"class" : "IP Device",
+		"parent" : "vGiXoZLPI"
+	},
+	{
+		"name" : "Cam 5",
+		"guid" : "iSpn40S1",
+		"class" : "Channel",
+		"parent" : "vGiXoZLPC"
+	},
+	{
+		"name" : "Cam 12",
+		"guid" : "kc1D5FHS",
+		"class" : "Channel",
+		"parent" : "vGiXoZLPC"
+	},
+	{
+		"name" : "Cam 1",
+		"guid" : "loucxTf8",
+		"class" : "Channel",
+		"parent" : "vGiXoZLPC"
+	},
+	{
+		"name" : "Cam 9",
+		"guid" : "nCfJffY2",
+		"class" : "Channel",
+		"parent" : "vGiXoZLPC"
+	},
+	{
+		"name" : "2",
+		"guid" : "ogB04awX",
+		"class" : "Template",
+		"parent" : "vGiXoZLPT"
+	},
+	{
+		"name" : "????????? ????????? trassir",
+		"guid" : "operatorgui_vGiXoZLP",
+		"class" : "OperatorGUI",
+		"parent" : "vGiXoZLP"
+	},
+	{
+		"name" : "1",
+		"guid" : "r2mg06OV",
+		"class" : "Template",
+		"parent" : "vGiXoZLPT"
+	},
+	{
+		"name" : "SIP Calls Registrator",
+		"guid" : "sip_calls_registrator_vGiXoZLP",
+		"class" : "SipCalls",
+		"parent" : "vGiXoZLP"
+	},
+	{
+		"name" : "Cam 2",
+		"guid" : "uotgQi9K",
+		"class" : "Channel",
+		"parent" : "vGiXoZLPC"
+	},
+	{
+		"name" : "trassir",
+		"guid" : "vGiXoZLP",
+		"class" : "Server",
+		"parent" : "vGiXoZLP"
+	},
+	{
+		"name" : "??????",
+		"guid" : "vGiXoZLPC",
+		"class" : "Folder",
+		"parent" : "vGiXoZLP"
+	},
+	{
+		"name" : "Face Recognizer",
+		"guid" : "vGiXoZLPFR",
+		"class" : "Face Recognizer",
+		"parent" : "vGiXoZLP"
+	},
+	{
+		"name" : "IP-??????????",
+		"guid" : "vGiXoZLPI",
+		"class" : "Folder",
+		"parent" : "vGiXoZLP"
+	},
+	{
+		"name" : "SIP",
+		"guid" : "vGiXoZLPP",
+		"class" : "Folder",
+		"parent" : "vGiXoZLP"
+	},
+	{
+		"name" : "???????",
+		"guid" : "vGiXoZLPT",
+		"class" : "FolderH",
+		"parent" : "vGiXoZLP"
+	},
+	{
+		"name" : "???????",
+		"guid" : "w0d9EYGd",
+		"class" : "IP Device",
+		"parent" : "vGiXoZLPI"
+	},
+	{
+		"name" : "OMNY miniDome1.3M-12V 4",
+		"guid" : "wvLw0ACW",
+		"class" : "IP Device",
+		"parent" : "vGiXoZLPI"
+	},
+	{
+		"name" : "TR-D8251WDIR3 4",
+		"guid" : "z4NZErfH",
+		"class" : "IP Device",
+		"parent" : "vGiXoZLPI"
+	}
+]
+/*
+
+To check state of object use:
+
+https://localhost:8080/objects/z4NZErfH
+
+*/

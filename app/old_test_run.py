@@ -1,14 +1,15 @@
 #!/bin/python3
 
 import logging
-from lib.rtls import rtls_alarm, rtls_ok
-from lib.camera import camera_alarm, camera_ok
-from lib.lib import generage_user
-from lib.scud import scud_ok, scud_alarm
-from lib.socket import socket_writer
-import time
 import random
 import threading
+import time
+
+from lib.camera import camera_alarm, camera_ok
+from lib.lib import generage_user
+from lib.rtls import rtls_alarm, rtls_ok
+from lib.scud import scud_alarm, scud_ok
+from lib.socket import socket_writer
 
 USER_COUNT = 12
 THREAD_SLEEP = 3
