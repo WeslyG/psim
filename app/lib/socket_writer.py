@@ -1,6 +1,7 @@
 from socket import AF_UNIX, SOCK_DGRAM, socket
 
-socketAddr = '/var/ossec/queue/ossec/queue'
+# socketAddr = '/var/ossec/queue/ossec/queue' # Устарело
+socketAddr = '/var/ossec/queue/sockets/queue'
 
 def socket_writer(msg: str):
     string = '1:psim:{0}'.format(msg)
@@ -8,3 +9,6 @@ def socket_writer(msg: str):
     sock.connect(socketAddr)
     sock.send(string.encode())
     sock.close()
+
+
+# socket_writer('zzz user="vasya" point="3;3"')

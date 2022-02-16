@@ -1,0 +1,15 @@
+<!-- Local rules -->
+<group name="psim,">
+
+  <rule id="222001" level="7">
+    <decoded_as>psim_base</decoded_as>
+    <description>Psim group rule</description>
+  </rule>
+  <rule id="222016" level="7">
+    <if_sid>222001</if_sid>
+    <action>true</action>
+    <!-- <field name="point">qqq</field> -->
+    <description>Action true (isInside work correct)</description>
+  </rule>
+
+</group>

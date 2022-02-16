@@ -1,0 +1,7 @@
+<decoder name="psim_base">
+  <prematch>zzz</prematch>
+</decoder>
+<decoder name="psim_decoder">
+  <parent>psim_base</parent>
+  <plugin_decoder>PSIM_Decoder</plugin_decoder>
+</decoder>

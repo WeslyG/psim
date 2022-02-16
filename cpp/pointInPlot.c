@@ -128,6 +128,7 @@ int main() {
   char rule_input_data[]= "1,2.666;7.823,99.22;3.2,1.1;4.22,2.7;4.78,2.7;-142.583,999";
 
   struct Point current_point;
+  // Вот тут надо научиться через malloc выделять память
   struct Point room[100] = {0};
 
   int len = strlen(rule_input_data);
@@ -139,7 +140,7 @@ int main() {
   for (int i = 0; i <= len; i++) {
     if (rule_input_data[i] == ',' || rule_input_data[i] == ';' || i == len) {
       int q = i - state;
-      char tempStr[q + 1] = "";
+      char tempStr[50] = "";
       // memcpy(tempStr, &rule_input_data[state], q);
       strncpy(tempStr, &rule_input_data[state], q);
 

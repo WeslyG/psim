@@ -1,0 +1,22 @@
+<rules>
+  <rule>
+    <user>vasya</user>
+    <room>0,0;0,10;10,0;10,10</room>
+  </rule>
+  <rule>
+    <user>petya</user>
+    <room>0,0;0,10;10,0;10,10</room>
+  </rule>
+  <rule>
+    <user>igor</user>
+    <room>0,0;0,10;10,0;10,10</room>
+  </rule>
+  <rule>
+    <user>anna</user>
+    <room>0,0;0,10;10,0;10,10</room>
+  </rule>
+  <rule>
+    <user>elena</user>
+    <room>0,0;0,10;10,0;10,10</room>
+  </rule>
+</rules>
